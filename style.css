@@ -102,3 +102,10 @@ h1 {
 .auto-status {
   text-align: center;
 }
+
+cite {
+  text-align: left;
+  margin: 10px;
+  display: block;
+  color: #1c4a5a6b;
+}

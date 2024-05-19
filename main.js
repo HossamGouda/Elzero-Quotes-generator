@@ -5,6 +5,7 @@ const stopBtn = document.querySelector(".stop"); // Button to stop auto play
 const quoteDiv = document.querySelector(".quote-display"); // Div to display the quote
 const quoteId = document.querySelector(".quote-id"); // Div to display the quote ID
 const autoStatus = document.querySelector(".auto-status"); // Div to display auto play status
+const cite = document.querySelector("cite");
 let intervalId; // Interval ID for auto play
 
 const apiCat = "random";
@@ -38,6 +39,8 @@ async function generateQuote() {
     // const quote = quotes[Math.floor(Math.random() * quotes.length)];
     quoteDiv.innerHTML = quotes.content;
     const id = parseInt(quotes.length);
+    cite.innerHTML = `Author :
+     ${quotes.author}`;
     // console.log(id);
     quoteId.innerHTML = id;
   } catch (error) {
