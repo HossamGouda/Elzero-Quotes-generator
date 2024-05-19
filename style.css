@@ -1,0 +1,104 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #eee;
+  margin: 0;
+}
+
+h1 {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.quotes {
+  margin: 40px auto 20px;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  min-height: 300px;
+}
+
+.quote-id {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  background-color: #e91e63;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-display {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.8;
+  border-bottom: 2px solid #eee;
+  position: relative;
+}
+
+.quote-display::before,
+.quote-display::after {
+  font-size: 50px;
+  position: absolute;
+  color: #aaa;
+}
+
+.quote-display::before {
+  content: "“";
+  top: 0;
+  left: 0;
+}
+
+.quote-display::after {
+  content: "”";
+  bottom: 0;
+  right: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+}
+
+.generate {
+  background-color: #4caf50;
+}
+
+.auto {
+  background-color: #2196f3;
+}
+
+.stop {
+  background-color: #f44336;
+}
+
+.auto-status {
+  text-align: center;
+}
